@@ -24,17 +24,17 @@ public class StartUp {
         
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        String date = "04/17/2017";
+        String date = "11/06/2017";
         LocalDate localDate = dateTimeLab.stringToLocalDate(date, formatter);
         System.out.println("localDate = " + localDate);
         
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm");
-        String currentDate = "04/17/2017 15:38";
+        String currentDate = "11/06/2017 09:30";
         LocalDateTime localDateTime = dateTimeLab.stringToLocalDateTime(currentDate, dateTimeFormatter);
         System.out.println(localDateTime);
         
-        LocalDateTime startDate = LocalDateTime.of(2016, Month.DECEMBER, 24, 12, 00);
-        LocalDateTime endDate = LocalDateTime.of(2017, Month.DECEMBER, 24, 12, 00);
+        LocalDateTime startDate = LocalDateTime.of(2017, Month.DECEMBER, 24, 12, 00);
+        LocalDateTime endDate = LocalDateTime.of(2018, Month.DECEMBER, 24, 12, 00);
         Long unitsBetween = dateTimeLab.getChronoUnitsBetweenTwoDates(startDate, endDate, SECONDS);
         System.out.println("Units Between: " + unitsBetween);
         
