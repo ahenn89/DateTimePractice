@@ -38,11 +38,6 @@ public class StartUp {
         Long unitsBetween = dateTimeLab.getChronoUnitsBetweenTwoDates(startDate, endDate, SECONDS);
         System.out.println("Units Between: " + unitsBetween);
         
-        
-
-
-
-
     }
 }
 
